@@ -36,17 +36,18 @@ class MyApp extends StatelessWidget {
         home: FractionallySizedBox(
           widthFactor: 1.0,
           child: CustomStepProgressIndicator(
-            totalSteps: 14, // Total number of steps
-            currentStep: 11, // Current step (selected step)
+            totalSteps: 30, // Total number of steps
+            currentStep: 25, // Current step (selected step)
             stepWidth:
                 MediaQuery.of(context).size.width / 80, // Width of each step
             stepHeight: 2, // Height of each step
             padding: 2.0, // Padding between steps
             unselectedColor: Colors.grey, // Color for unselected steps
-            firstColor: Colors.cyan,
             width: double.infinity,
             height: 100,
-            lastColor: Colors.red, // Colors for the wavy gradient
+            firstColor: Colors.cyan.shade500,
+            lastColor: Colors.red,
+            middleColor: Colors.yellow, // Colors for the wavy gradient
           ),
         ));
   }
